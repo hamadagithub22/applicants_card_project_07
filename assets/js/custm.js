@@ -236,7 +236,7 @@ function updateApplicant(){
     submitBtn.innerText = "Submit";
    
     }else{
-        alert("iput are not valid");
+        alert("Please fill in all required fields.");
     }
     
 }

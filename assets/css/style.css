@@ -128,7 +128,7 @@ form input{
     font-size: 16px;
     color: rgb(255, 255, 255);
     /* background-color: blue; */
-    border-radius: 20px;
+    border-radius: 22px;
     height: 45px;
     
    
@@ -139,15 +139,16 @@ form input{
    
 }
 .btn_bg_color1{
-background-color: rgb(12, 94, 216);
+    background-color: blue;
+
 }
 .btn_bg_color2{
     background-color: green;
 }
 
 .btn:hover{
-    
-    background-color: blue;
+    background-color: rgb(12, 94, 216);
+   
     transition: 0.3s;
     transform: scalex(1.0);
     filter: none;
@@ -192,6 +193,26 @@ background-color: rgb(12, 94, 216);
  
    
 }
+ 
+#row-1{
+   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    
+}
+#row-2{
+   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+ 
+    
+}
+
+
 
 .card-title{
     color: rgb(28, 22, 9);
@@ -270,6 +291,13 @@ background-color: rgb(12, 94, 216);
    
 }
 
+.card-btn button:hover{
+    background-color:rgb(91, 91, 242);
+    
+}
+.card-btn span button:hover{
+    background-color: rgb(165, 54, 54);
+}
 
 
 

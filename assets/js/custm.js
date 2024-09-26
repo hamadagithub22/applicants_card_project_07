@@ -7,6 +7,8 @@ let applicantsRow = document.querySelector("#applicants");
 
 
 
+
+
 let applicants = JSON.parse(localStorage.getItem("applicants")) || [];
 submitBtn.addEventListener("click", ()=>{
     if(submitBtn.innerText == "Submit"){
@@ -104,12 +106,14 @@ function printApplicant(){
                        <div class="card-content">
                            <h4  class="card-title">${applicant.first_name} ${applicant.last_name} </h4>
                            <div class="row" >
+                               <span id="row-1">
                                <div class="div-card-text">
                                    <p class="card-text">age : ${applicant.age} </p>
                                   </div>
                                   <div class="div-card-text">
                                    <p class="card-text">martial status :  ${applicant.martial_status}</p>
                                   </div>
+                                  </span>
                           
                               <div class="div-card-text">
                                <p class="card-text">gender  :  ${applicant.gender}</p>
@@ -129,12 +133,14 @@ function printApplicant(){
                               <div class="div-card-text">
                                <p class="card-text">job title  :   ${applicant.job_title}  </p>
                               </div> 
+                              <span id="row-2">
                               <div class="div-card-text">
                                <p class="card-text"> salary :   ${applicant.salalry}  </p>
                               </div> 
                               <div class="div-card-text">
                                <p class="card-text"> experiance :   ${applicant.experiance}</p>
                               </div> 
+                              </span>
                               <div class="card-btn">
                                <button onclick='editApplicant(${d_index})'><i class="fa-solid fa-pen-to-square"></i></button>
                               <span> <button onclick='deletApplicant(${d_index})'><i class="fa-solid fa-trash-can"></i></button></span>
@@ -187,6 +193,12 @@ function editApplicant(index) {
 
     submitBtn.classList.replace("btn_bg_color1", "btn_bg_color2");
     submitBtn.innerText = "update";
+
+
+    function scrollDown() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    scrollDown()
 
    
 }

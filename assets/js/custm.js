@@ -89,7 +89,7 @@ function addApplicant(){
     submitBtn.classList.replace("btn_bg_color2", "btn_bg_color1");
     submitBtn.innerText = "update";
     }else{
-        alert("iput are not valid");
+        alert("Please fill in all required fields.");
     }
     
 }
